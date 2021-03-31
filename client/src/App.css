@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif !important;
+}
+
+body {
+  background-color: rgba(240, 248, 255, 0.986);
+}
+.navbar{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+ }

@@ -1,0 +1,282 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: white;
+}
+
+.profile-img-update-btn-container {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 40%;
+    padding: 50px;
+    border-bottom: 1px solid grey;
+
+}
+
+.profile-img-container {
+    width: 230px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-right: 20px;
+    border-right: 3px solid dodgerblue;
+    border-radius: 180px;
+}
+
+.profile-img {
+    width: 210px !important;
+    height: 210px;
+    border-radius: 180px !important;
+    box-shadow: 0px 0px 15px 2px rgba(30, 143, 255, 0.452);
+    padding: 1px;
+}
+
+.upload-btn {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid dodgerblue;
+    margin-right: 10px;
+    color: dodgerblue !important;
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.212);
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.671);
+    background-color: dodgerblue;
+    color: white !important;
+}
+
+.upload-btn:focus {
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.671);
+    background-color: dodgerblue;
+    color: white !important;
+}
+
+.update-btn {
+    padding: 5px 20px;
+    border: 2px solid dodgerblue !important;
+    border-radius: 20px !important;
+    cursor: pointer;
+    color: dodgerblue;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.199);
+    transition: all 0.5s;
+}
+
+.update-btn:hover {
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.671);
+    background-color: dodgerblue;
+    color: white;
+}
+
+.update-btn:focus {
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.671);
+    background-color: dodgerblue;
+    color: white;
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.user-info {
+    display:flex;
+}
+
+.user-info > h6 {
+    margin-right: 10px !important;
+}
+
+.user-gallery-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.gallery-img {
+    width: 30%;
+    max-height: 350px;
+    min-height: 100px;
+    margin: 10px;
+    border-radius: 2px !important;
+    box-shadow: 0px 0px 15px 7px rgba(245, 245, 245, 0.425);
+}
+/* styling follow and unfollow button for UsersProfile */
+.follow-btn {
+    margin-top: 10px;
+    padding: 5px 30px;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid dodgerblue;
+    background-color: white;
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.281);
+    transition: all 0.5s;
+}
+
+.follow-btn:hover {
+    box-shadow: 0px 1px 10px rgba(30, 143, 255, 0.603);
+}
+
+.follow-btn:focus {
+    background-color: dodgerblue;
+    color: white;
+}
+
+@media only screen and (max-width : 900px) {
+
+    .profile {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .user-profile-container {
+        margin: 10px;
+        height: 40%;
+        padding: 20px;
+        border-bottom: 1px solid grey;
+    }
+    
+    .profile-img-container {
+        width: 170px;
+        height: auto;
+    }
+    
+    .profile-img {
+        width: 150px !important;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width : 770px) {
+
+    .profile {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .user-profile-container {
+        margin: 10px;
+        height: 40%;
+        padding: 20px;
+        border-bottom: 1px solid grey;
+    }
+    
+    .profile-img-container {
+        width: 160px;
+        height: auto;
+    }
+    
+    .profile-img {
+        width: 140px !important;
+        height: 140px;
+    }
+
+    .user-name{
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    .gallery-img {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width : 530px) {
+
+    .profile {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .user-profile-container {
+        margin: 5px;
+        height: 40%;
+        padding: 10px 2px;
+        border-bottom: 1px solid grey;
+    }
+    
+    .profile-img-container {
+        width: 140px;
+        height: auto;
+    }
+    
+    .profile-img {
+        width: 120px !important;
+        height: 120px;
+    }
+    .gallery-img {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width : 435px) {
+    .user-info > h6 {
+        margin-right: 5px !important;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width : 420px) {
+
+    .profile {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .user-profile-container {
+        margin: 5px;
+        height: 40%;
+        padding: 10px 2px;
+        border-bottom: 1px solid grey;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .profile-img-container {
+        width: 140px;
+        height: auto;
+    }
+    
+    .profile-img {
+        width: 120px !important;
+        height: 120px;
+    }
+
+    .user-info-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .user-name{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: 37px;
+    }
+
+    .user-info > h6 {
+        margin-right: 7px !important;
+        font-size: 15px;
+    }
+    .gallery-img {
+        width: 40%;
+    }
+}

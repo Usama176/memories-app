@@ -1,0 +1,24 @@
+.users-container {
+    display: flexbox;
+    padding: 10px !important;
+    margin: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.users-container input {
+    background-color: white !important;
+    padding: 5px 0 !important;
+    text-align: center;
+    font-size: large !important;
+    border-radius: 35px !important;
+    box-shadow: 0px 1px 5px rgba(19, 19, 19, 0.171) !important;
+    border: 1px solid dodgerblue !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .users-container input {
+        padding: 2px 0 !important;
+        font-size: medium !important;
+    }
+}

@@ -1,0 +1,378 @@
+a {
+    text-decoration: none;
+    color: black;
+ }
+ 
+ .navbar-container {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  width: 100% !important;
+  height: auto;
+  background: white;
+ }
+
+.navbar {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: white !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+  justify-content: space-around;
+  padding: 0 15px;
+  box-shadow: 0px 1px 3px rgba(30, 143, 255, 0.349);
+}
+
+.navbar-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 99%;
+  padding: 1px 20px !important;
+  margin: 3px 5px;
+  border-bottom: 2px solid rgba(30, 143, 255, 0.274);
+}
+
+.logo {
+  color: black;
+  font-size: 2.6rem;
+  font-family: Kaushan Script, cursive !important;
+  text-shadow: 1px 1px 2px rgba(12, 12, 12, 0.158);
+  transition: transform 0.3s;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.logo:focus{
+    transform: scale(1.1);
+}
+
+.search-logout-container {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  text-align: center;
+}
+
+.search-logout-btn {
+  font-size: xx-large;
+  cursor: pointer;
+  transition: color 0.4s;
+  margin-left: 10px;
+  background-color: aliceblue;
+  padding: 0 6px;
+  border-radius: 30px;
+  box-shadow: 0px 1px 5px rgba(30, 143, 255, 0.219);
+}
+
+.search-logout-btn:hover {
+  color: dodgerblue;
+}
+
+.navbar-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 3px;
+}
+ 
+.navbar-ul > li > .links {
+    display: inline-block;
+    background: white;
+    padding: 10px 70px;
+    -webkit-transition: background 0.5s;
+    transition: background 0.5s;
+    border-bottom: 1px solid white;
+}
+
+.nav-icons {
+  font-size: 2rem !important;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.material-icons {
+  margin: 5px;
+}
+
+.nav-user-profile {
+  max-width: 40px;
+  max-height: 40px !important;
+  border-radius: 40px;
+}
+
+li:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: dodgerblue;
+    transition: width .3s;
+  }
+  
+li:hover:after {
+    width: 100% !important;
+    transition: width .3s;
+  }
+  
+.navbar-ul > li > .links:hover {
+    background: aliceblue;
+    cursor: pointer;
+    border-color: aliceblue !important;
+  }
+
+.selected{
+    border-color: aliceblue !important;
+    background-color: aliceblue !important;
+  }
+
+.selected:first-child{
+  color: dodgerblue !important;
+}
+
+/* Styling search modal */
+.modal {
+  width: inherit !important;
+  max-width: 900px !important;
+}
+
+.modal-content {
+  padding: 20px 10px !important;
+}
+
+.modal-content input {
+  text-align: center;
+  font-size: large !important;
+  border: 1px solid dodgerblue !important;
+  border-radius: 30px !important;
+  background-color: white !important;
+}
+
+.search-user-container {
+  display: flex;
+  align-items: center;
+  width: 100% !important;
+  background-color: white;
+  margin: 10px 0 !important;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(22, 22, 22, 0.192);
+}
+
+
+.search-user-container img {
+  width: 60px;
+  height: 60px;
+  border-radius: 70px;
+  margin-right: 10px;
+}
+
+.search-user-container li {
+  font-size: large;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 920px) {
+
+  .navbar-logo-container {
+    width: 100%;
+  }
+
+  .search-logout-container {
+    flex: 0.1;
+  }
+
+  .logo {
+    flex: 0.1;
+    font-size: 2.4rem;
+  }
+  
+  .logo:hover{
+      transform: scale(1.4);
+  }
+  
+  .logo:focus{
+      transform: scale(1.4);
+  }
+
+  .nav-icons {
+    font-size: 1.9rem !important;
+    transform: scale(1.4);
+  }
+  
+  .material-icons {
+    margin: 3px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .navbar-ul > li > .links {
+    padding: 7px 50px;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar {
+    padding: 0 10px;
+    height: auto;
+    width: 100%;
+  }
+  .logo {
+    font-size: 2.1rem;
+  }
+
+  .search-logout-btn {
+    font-size: x-large;
+  }
+
+  .logo:hover{
+    transform: scale(1.4);
+  }
+
+  .logo:focus{
+    transform: scale(1.4);
+  }
+
+  .navbar-ul > li > .links {
+    padding: 7px 40px;
+    border-bottom: 1px solid white;
+  }
+
+  .profile-link {
+    padding: 1px 40px !important;
+  }
+
+  .nav-icons {
+    font-size: 1.4rem !important;
+    transform: scale(1.5);
+  }
+
+  .material-icons {
+    margin: 2px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+
+  .navbar-ul > li > .links {
+    padding: 7px 30px;
+    border-bottom: 1px solid white;
+  }
+
+  .profile-link {
+    padding: 1px 26px !important;
+  }
+
+}
+
+@media only screen and (max-width: 418px) {
+  .navbar {
+    padding: 0 2px;
+  }
+
+  .navbar-logo-container {
+    width: 98%;
+    margin: 3px 10px ;
+  }
+
+  .logo {
+    font-size: 1.9rem;
+  }
+
+  .search-logout-btn {
+    font-size: large !important;
+    transform: scale(1.1);
+  }
+
+  .logo:hover{
+    transform: scale(1.3);
+  }
+
+  .logo:focus{
+    transform: scale(1.3);
+  }
+
+  .navbar-ul > li > .links {
+    padding: 7px 20px;
+    border-bottom: 1px solid white;
+    margin: 2px 0px !important;
+  }
+
+  .profile-link {
+    padding: 1px 20px !important;
+  }
+
+  .nav-user-profile {
+    max-width: 38px;
+    max-height: 38px !important;
+  }
+
+  li:hover:after {
+    width: 100% !important;
+    transition: width .3s;
+  }
+
+  .nav-icons {
+    font-size: 1.8rem !important;
+    transform: scale(1.4);
+  }
+  .material-icons {
+    margin: 1px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .nav-icons {
+    font-size: 1.3rem !important;
+    transform: scale(1.4);
+  }
+
+  .profile-link {
+    padding: 1px 15px !important;
+  }
+
+  .nav-user-profile {
+    max-width: 32px;
+    max-height: 32px !important;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .navbar-logo-container {
+    margin: 2px 6px ;
+  }
+
+  .navbar-ul > li > .links {
+    padding: 7px 15px !important;
+    border-bottom: 1px solid white;
+  }
+
+  .profile-link {
+    padding: 1px 10px !important;
+  }
+
+  .nav-user-profile {
+    max-width: 25px;
+    max-height: 25px !important;
+  }
+
+  .search-user-input {
+    height: 15px !important;
+    padding: 0px;
+    font-size: small;
+  }
+
+  .search-container > i {
+    font-size: small;
+  }
+
+  .navbar-ul > li > .links {
+    padding: 7px 30px;
+  }
+}
