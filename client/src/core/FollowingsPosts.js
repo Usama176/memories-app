@@ -216,7 +216,7 @@ const FollowingsPosts = () => {
                                 }
                                 <CardContent>
                                     <Typography variant="body2" color="textSecondary" component="h6">
-                                        <h6>{item.likes.length + item.haha.length + item.angry.length} reacts</h6>
+                                        <h6>{item.likes.length} reacts</h6>
                                     </Typography>
                                     <div className="card-icons">
                                         <div>
