@@ -269,7 +269,6 @@ const Home = () => {
                                     <div className={`comments-container ${item._id == postId ? showComments : null}`}>
                                         {
                                             item.comments.map(record=>{
-                                                console.log(record)
                                                 return(
                                                     <div key={record._id} className="comment-container">
                                                         <img src={record.postedBy.pic} className="post-user-profile"  />

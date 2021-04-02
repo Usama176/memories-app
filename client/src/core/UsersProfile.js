@@ -24,7 +24,7 @@ const UsersProfile = () => {
     const [showfollow, setShowFollow] = useState(state? state.following.includes(user_id):true);
 
     useEffect( async ()=>{
-        await (`/user/${user_id}`, {
+        await fetch(`/user/${user_id}`, {
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("jwt")
             }
